@@ -7,10 +7,7 @@ Hello world
 Hello world
 Hello world
 Hello world"""
-print("Hello world")
-print("Hello world")
-print("Hello world")
-print("Hello world")
+print("Hello world \n Hello world \n Hello world \n Hello world")
 
 # Exercise 2 : Some Math
 """
