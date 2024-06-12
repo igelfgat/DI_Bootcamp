@@ -86,14 +86,14 @@ Instructions
 Write a while loop that will continuously ask the user for their name, unless the input is equal to your name.
 """
 
-"""my_name = "Ilya"
+my_name = "Ilya"
 user_name = ''
 while user_name != my_name:
     user_name = input("Enter your name: ")
     if user_name == my_name:
         break
     else: 
-        continue"""
+        continue
 
 #Exercise 7: Favorite Fruits
 
@@ -108,14 +108,14 @@ If the user’s input is in the favorite fruits list, print “You chose one of 
 If the user’s input is NOT in the list, print, “You chose a new fruit. I hope you enjoy”.
 """
 
-"""favorite_fruits = input("Enter your favorite fruit(s) using space(eg.'apple mango cherry'): ")
+favorite_fruits = input("Enter your favorite fruit(s) using space(eg.'apple mango cherry'): ")
 favorite_fruits_list = favorite_fruits.split()
 print(favorite_fruits_list)
 any_fruit = input("Enter any fruit: ")
 if any_fruit in favorite_fruits_list:
     print("You chose one of your favorite fruits! Enjoy!")
 else:
-    print("You chose a new fruit. I hope you enjoy")"""
+    print("You chose a new fruit. I hope you enjoy")
 
 
 #Exercise 8: Who Ordered A Pizza ?
@@ -125,7 +125,7 @@ Instructions
 Write a loop that asks a user to enter a series of pizza toppings, when the user inputs ‘quit’ stop asking for toppings.
 As they enter each topping, print a message saying you’ll add that topping to their pizza.
 Upon exiting the loop print all the toppings on the pizza pie and what the total price is (10 + 2.5 for each topping)."""
-"""pizza = []
+pizza = []
 while True:
     pizza_toping = input("Enter a series of pizza toppings, when you'll finish enter 'quit': ")
     if pizza_toping == 'quit':
@@ -134,7 +134,7 @@ while True:
         break
     else:
         print(f"You will add {pizza_toping} to your pizza")
-        pizza.append(pizza_toping)"""
+        pizza.append(pizza_toping)
 
 #Exercise 9: Cinemax
 """
@@ -153,7 +153,7 @@ A group of teenagers are coming to your movie theater and want to watch a movie 
 Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
 At the end, print the final list.
 """
-"""total_cost = 0
+total_cost = 0
 while True:
     age = input("Enter the age of each person who want a ticket(enter 'quit' when all ages are in the system): ")
     if age == "quit":
@@ -166,9 +166,9 @@ while True:
     elif int(age) > 12:
         print("15$")
         total_cost += 15
-print("total cost: ", total_cost)"""
+print("total cost: ", total_cost)
 
-"""names = ["Ilya", "Artur", "Jack", "Moshe"]
+names = ["Ilya", "Artur", "Jack", "Moshe"]
 
 for i in range(len(names)):
     age = int(input("Enter your age: "))
@@ -178,7 +178,7 @@ for i in range(len(names)):
         print("Your age is not allowed")
     elif name not in names:
         print("You are not in the list of names. Sorry!")
-print("final list of names: ", names)"""
+print("final list of names: ", names)
 
 #Exercise 10 : Sandwich Orders
 
