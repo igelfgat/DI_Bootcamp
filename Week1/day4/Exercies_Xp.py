@@ -133,7 +133,7 @@ Ask the user to type in a season - ‘summer’, ‘autumn’ (you can use ‘fa
 Use the season as an argument when calling get_random_temp().
 """
 
-"""def get_random_temp(season):
+def get_random_temp(season):
     if season == "winter":
         temp = random.randint(-10, 16)
     elif season == "spring":
@@ -159,7 +159,7 @@ def main():
         print("Warm, take your sunglasses")
     elif 32 <= temperature <= 40:
         print("It's very hot, stay home")
-main()"""
+main()
 
 
 #Bonus
@@ -167,7 +167,7 @@ main()"""
 Bonus: Give the temperature as a floating-point number instead of an integer.
 Bonus: Instead of asking for the season, ask the user for the number of the month (1 = January, 12 = December). Determine the season according to the month."""
 
-"""def get_random_temp(season):
+def get_random_temp(season):
     if season == "winter":
         temp = round(random.uniform(-10, 16),2)
     elif season == "spring":
@@ -201,7 +201,7 @@ def main():
         print("Warm, take your sunglasses")
     elif 32 <= temperature <= 40:
         print("It's very hot, stay home")
-main()"""
+main()
 
 #Exercise 8 : Star Wars Quiz
 
