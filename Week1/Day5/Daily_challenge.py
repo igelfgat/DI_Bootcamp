@@ -44,4 +44,4 @@ def the_longest_word(str):
         elif len(word) > len(longest_word):
             longest_word = word
     return(longest_word)
-print(the_longest_word("A thing of beauty is a joy forever!"))
+print(the_longest_word("A thing of beauty is a joy forever"))
