@@ -197,18 +197,19 @@ class Zoo:
             print(group_number,animals)
 
 
-# Create a new Zoo instance
-ramat_gan_safari = Zoo("Zoo")
+def main():
+    ramat_gan_safari = Zoo("Zoo")
 
-ramat_gan_safari.add_animal("Eel")
-ramat_gan_safari.add_animal("Tiger")
-ramat_gan_safari.add_animal("Giraffe")
-ramat_gan_safari.add_animal("Elephant")
-ramat_gan_safari.get_animals()
-ramat_gan_safari.sell_animal("Giraffe")
-print(ramat_gan_safari.sort_animals())
-ramat_gan_safari.get_groups()
+    ramat_gan_safari.add_animal("Eel")
+    ramat_gan_safari.add_animal("Tiger")
+    ramat_gan_safari.add_animal("Giraffe")
+    ramat_gan_safari.add_animal("Elephant")
+    ramat_gan_safari.get_animals()
+    ramat_gan_safari.sell_animal("Giraffe")
+    print(ramat_gan_safari.sort_animals())
+    ramat_gan_safari.get_groups()
 
-
+if __name__ == "__main__":
+    main()
 
     

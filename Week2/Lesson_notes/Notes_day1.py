@@ -91,7 +91,7 @@ for num in my_list:
     except:
         continue
     else:
-        print(num) # When except did work
+        print(num) # Else will happen when the except doesn't happen
     finally:
         print("Happens even if there is no except")
 print(total)

@@ -47,6 +47,7 @@ class Farm:
     def __init__(self, farm_name) -> None:
         self.name = farm_name
         self.animals = {}
+        
     def add_animal(self, new_animal, number = 1):
         if new_animal in self.animals:
             self.animals[new_animal] += number
@@ -67,7 +68,7 @@ class Farm:
         return self.animal_list
     def get_short_info(self):
         print(f"{self.name}’s farm has {self.animal_list[0]}s, {self.animal_list[1]}s and {self.animal_list[2]}s.")
-        
+
 def main():
     macdonald = Farm("McDonald")
     macdonald.add_animal('cow',5)
