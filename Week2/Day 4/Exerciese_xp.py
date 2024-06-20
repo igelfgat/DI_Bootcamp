@@ -38,7 +38,7 @@ def get_random_sentence(length: int):
 # If the user inputs incorrect data, print an error message and end the program.
 # If the user inputs correct data, run your code.
 
-"""def main():
+def main():
     global words_list
     print("This program generates a random sentence from a list of words.")
     print("You can specify the length of the sentence you want to generate.")
@@ -56,7 +56,7 @@ def get_random_sentence(length: int):
     print(get_random_sentence(length))
 
 if __name__ == "__main__":
-    main()"""
+    main()
 
 
 
@@ -80,14 +80,11 @@ sampleJson = """{
 Add a key called “birth_date” to the JSON-string at the same level as the “name” key.
 Save the dictionary as JSON to a file."""
 
-# Reading a json string
 
 contents_dict = json.loads(sampleJson)  # json.loads reads a json string
 print(contents_dict["company"]["employee"]["payable"]["salary"])
 contents_dict["company"]["employee"]["birth_date"] = "1999-03-21"
-print(contents_dict["company"]["employee"])
 new_json_file_location = "Week2/Day 4/new_data.json"
-print(contents_dict)
 
 with open(new_json_file_location, mode="w") as file:
     json.dump(contents_dict, file)

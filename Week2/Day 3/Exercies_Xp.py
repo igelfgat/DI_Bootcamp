@@ -14,24 +14,22 @@ class Currency:
         object_repr = f"'{self.amount} {self.currency}'"
         return object_repr
     def __add__(self, other):
-        if isinstance(other, (int, float)):  # Adding a numeric value
+        #isinstance - func for checking the type of the variable
+        if isinstance(other, (int, float)):  
             return self.amount + other
-        elif isinstance(other, Currency):  # Adding another Currency object
+        elif isinstance(other, Currency):  
             if self.currency != other.currency:
                 raise ValueError("Cannot add two different currencies.")
             return Currency(self.currency, self.amount + other.amount)
-        else:
-            raise TypeError("Unsupported operand type(s) for +: 'Currency' and '{}'".format(type(other).__name__))
 
     def __iadd__(self, other):
-        if isinstance(other, (int, float)):  # Adding a numeric value
+        """Method for adding/upating the amount of the calling Currency object (i.e Self)"""
+        if isinstance(other, (int, float)):  
             self.amount += other
-        elif isinstance(other, Currency):  # Adding another Currency object
+        elif isinstance(other, Currency): 
             if self.currency != other.currency:
                 raise ValueError(f"Cannot add between {self.currency} and {other.currency}.")
             self.amount += other.amount
-        else:
-            raise TypeError("Unsupported operand type(s) for +: 'Currency' and '{}'".format(type(other).__name__))
         return self
 
 def main():   
