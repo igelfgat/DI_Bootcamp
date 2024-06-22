@@ -20,7 +20,7 @@ def main():
         print("1. Input a word")
         print("2. Exit")
         choice = input("Choose an option: ")
-        anagram_checker = AnagramChecker("Week2/Day 5/sowpods.txt")
+        anagram_checker = AnagramChecker("Week2/Day 5/Angrams_checker/sowpods.txt")
         if choice == "1":
             word = input("Enter word: ").replace(" ", "") # without spaces before and after the word
             anagrams = anagram_checker.get_anagrams(word.upper())
