@@ -4,10 +4,17 @@
 Answer the following questions
 
 What is a class?
+    A class is a blueprint for creating objects (a particular data structure). 
+    It defines a set of attributes and methods that the created objects will have.
 What is an instance?
+    An instance is an individual object created using a class.
 What is encapsulation?
+    Encapsulation is the concept of bundling the data (attributes) and the methods (functions) that operate on the data into a single unit or class. 
+    It also involves restricting direct access to some of an object's components, which can prevent the accidental modification of data.
 What is abstraction?
+Abstraction is the concept of hiding the complex implementation details of a system and exposing only the necessary and relevant parts
 What is inheritance?
+Inheritance is a mechanism by which one class (the child) can inherit the properties and methods of another class (the parent).
 What is multiple inheritance?
 What is polymorphism?
 What is method resolution order or MRO?
@@ -21,8 +28,8 @@ The requirements are as follows:
 
 The Card class should have a suit (Hearts, Diamonds, Clubs, Spades) and a value (A,2,3,4,5,6,7,8,9,10,J,Q,K)
 The Deck class :
-should have a shuffle method which makes sure the deck of cards has all 52 cards and then rearranges them randomly.
-should have a method called deal which deals a single card from the deck. After a card is dealt, it should be removed from the deck."""
+    should have a shuffle method which makes sure the deck of cards has all 52 cards and then rearranges them randomly.
+    should have a method called deal which deals a single card from the deck. After a card is dealt, it should be removed from the deck."""
 import random
 
 class Card:
@@ -58,8 +65,7 @@ class Deck:
         else:
             return None
 
-# Example usage:
 deck = Deck()
-print(deck.deal())  # Deals one card
-deck.shuffle()      # Shuffles the deck
-print(deck.deal())  # Deals another card
+print(deck.deal())
+deck.shuffle()
+print(deck.deal())  

@@ -34,17 +34,13 @@ class Game:
         return random.choice(computer_item)
 
     def get_game_result(self, user_item, computer_item):
-        #results = {"win":0, "draw":0, "loss":0}
         if user_item == computer_item:
-            #results["draw"] = results["draw"] + 1
             return "draw"
         elif (user_item == 'rock' and computer_item == 'scissors') or \
              (user_item == 'paper' and computer_item == 'rock') or \
              (user_item == 'scissors' and computer_item == 'paper'):
-            #results["win"] = results["win"] + 1
             return "win"
         else:
-            #results["loss"] = results["loss"] + 1
             return "loss"
         
     def play(self):
