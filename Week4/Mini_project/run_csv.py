@@ -1,0 +1,22 @@
+import pandas as pd
+from sqlalchemy import create_engine
+engine = create_engine('postgresql+psycopg2://postgres:5859@localhost/Brazillian_E_Commerce')
+#df = pd.read_csv('Mini_project/olist_customers_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_geolocation_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_order_items_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_order_payments_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_order_reviews_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_orders_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_products_dataset.csv')
+#df = pd.read_csv('Mini_project/olist_sellers_dataset.csv')
+df = pd.read_csv('Mini_project/product_category_name_translation.csv')
+
+#df.to_sql('olist_customers_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_geolocation_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_order_items_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_order_payments_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_order_reviews_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_orders_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_products_dataset', engine, if_exists='replace', index=False)
+#df.to_sql('olist_sellers_dataset', engine, if_exists='replace', index=False)
+df.to_sql('product_category_name_translation', engine, if_exists='replace', index=False)
