@@ -1,0 +1,17 @@
+Step 1: Search for a relevant case or news story. Consider sources like business journals, news websites, or scientific publications.
+Step 2: Analyze the role of data analysis in the chosen story. Pay attention to what data was analyzed, the methods used, and the outcomes or decisions driven by the analysis.
+Step 3: Discuss within your group how the data analysis impacted the situation. Consider questions like: What would have been different without data analysis? How did data analysis contribute to solving a problem or making a decision?
+Step 4: Present your findings to the class. Focus on explaining the significance of data analysis in the context of your chosen story.
+
+I think streaming services as a Spotify is one of the best cases representing of how working wih data(espessialy data analyst) important for big and great project. 
+What data was analyzed: 
+- when and where users listen to music, 
+- the type of music they listen to, 
+- how often they listen to specific tracks, 
+- their interaction with playlist and a lot of other things.
+Methods:
+Filtering: Recommends music by identifying patterns in user behavior and finding similar user profiles.
+Analyzing songs and artists: which type of music, genre, date of song release.
+Machine Learning: Algorithms that predict user preferences and create personalized playlists
+Outcomes:
+Personalized Playlists and User Retention, that by continuously improving the user experience through personalized recommendations, Spotify enhances user retention and loyalty.
